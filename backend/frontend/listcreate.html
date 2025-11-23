@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="index3.css">
+<body>
+ <nav>
+            <li><img id ="homeic" src="home.gif"></li>
+            <li><img id ="aboutic" src="information.gif"></li>
+            <li><img id ="contactic" src="phone-contact.gif"></li>
+            <li id = 'My list'><img id ="listic" src="list.gif"></li>
+            <li class="settingic"><img id ="settingic" src="settings.gif"></li>
+            <li id = 'users'><img id ="useric" src="profile.png"></li>
+            <button id = "accounts" type="button"><h4>Log-out</h4></button>
+
+    </nav>
+    <div id ="task-box"><h1 id="title"></h1><br><br><br></div>
+    <script>
+        let a = document.getElementById("title")
+        a.innerText = localStorage.getItem('listname') || "No name found";
+    </script>
+    <script src="index3.js"></script>
+</body>
+</html>

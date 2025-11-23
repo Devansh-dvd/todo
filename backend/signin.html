@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Create Account</title>
+    <style>
+      :root{--bg:#f4f7fb;--card:#ffffff;--accent:#3b82f6;--muted:#6b7280}
+      *{box-sizing:border-box}
+      body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh;background:var(--bg);margin:0;padding:24px}
+      .card{background:var(--card);width:100%;max-width:420px;padding:28px;border-radius:12px;box-shadow:0 8px 30px rgba(16,24,40,0.08)}
+      h1{margin:0 0 6px;font-size:20px}
+      p.lead{margin:0 0 18px;color:var(--muted);font-size:14px}
+      label{display:block;font-size:13px;margin-bottom:6px;color:#111827}
+      input[type="text"],input[type="email"],input[type="password"]{width:100%;padding:10px 12px;border:1px solid #e6e9ef;border-radius:8px;font-size:14px}
+      .row{display:flex;gap:12px;align-items:center;margin:12px 0}
+      .actions{margin-top:18px;text-align:left}
+      button{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;border:0;font-weight:600;cursor:pointer}
+      .link{font-size:14px;color:var(--accent);text-decoration:none}
+      .small{font-size:13px;color:var(--muted)}
+      .footer-link{display:block;text-align:center;margin-top:18px}
+      @media (max-width:420px){body{padding:16px}.card{padding:20px}}
+    </style>
+  </head>
+  <body>
+    <main class="card" role="main">
+      <h1>Create a new account</h1>
+      <p class="lead">Fill in your details to sign up.</p>
+
+      <form action="#" method="post" autocomplete="on" novalidate>
+        <div class="field">
+          <label for="username">Username</label>
+          <input id="username" name="username" type="text" placeholder="Choose a username" required aria-required="true" />
+        </div>
+
+        <div class="field" style="margin-top:12px">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required aria-required="true" />
+        </div>
+
+        <div class="field" style="margin-top:12px">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="••••••••" minlength="6" required aria-required="true" />
+        </div>
+
+        <div class="actions">
+          <button type="submit">Create Account</button>
+        </div>
+      </form>
+      <br>
+      <a id="signin-link" href="#">Already have an account? Sign in</a>
+      <script src="signin.js"></script>
+    </main>
+  </body>
+</html>

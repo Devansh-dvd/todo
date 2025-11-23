@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reset Password</title>
+    <style>
+      :root {
+        --bg: #f4f7fb;
+        --card: #ffffff;
+        --accent: #3b82f6;
+        --muted: #6b7280;
+      }
+      * { box-sizing: border-box; }
+      body {
+        font-family: Inter, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: var(--bg);
+        margin: 0;
+        padding: 24px;
+      }
+      .card {
+        background: var(--card);
+        width: 100%;
+        max-width: 420px;
+        padding: 28px;
+        border-radius: 12px;
+        box-shadow: 0 8px 30px rgba(16, 24, 40, 0.08);
+      }
+      h1 { margin: 0 0 6px; font-size: 20px; }
+      p.lead { margin: 0 0 18px; color: var(--muted); font-size: 14px; }
+      label { display: block; font-size: 13px; margin-bottom: 6px; color: #111827; }
+      input[type="email"] {
+        width: 100%;
+        padding: 10px 12px;
+        border: 1px solid #e6e9ef;
+        border-radius: 8px;
+        font-size: 14px;
+      }
+      .actions { margin-top: 18px; text-align: right; }
+      button {
+        background: var(--accent);
+        color: #fff;
+        padding: 10px 14px;
+        border-radius: 8px;
+        border: 0;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .footer-link {
+        display: block;
+        text-align: center;
+        margin-top: 18px;
+      }
+      .link {
+        font-size: 14px;
+        color: var(--accent);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card" role="main">
+      <h1>Forgot your password?</h1>
+      <p class="lead">Enter your registered email and we’ll send reset instructions.</p>
+
+      <form action="#" method="post" autocomplete="on" novalidate>
+        <div class="field">
+          <label for="email">Registered Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required aria-required="true" />
+        </div>
+
+        <div class="actions">
+          <button type="submit">Send Reset Link</button>
+        </div>
+
+        <div class="footer-link">
+          <a class="link" href="login.html">Back to Login</a>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

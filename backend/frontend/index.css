@@ -1,0 +1,221 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+    }
+body{
+   
+    background-image: url("uff.png");
+    background-repeat: no-repeat;
+    background-size: 1536px 820px;
+}
+
+#header{
+    margin-top: 150px;
+    margin-left: 20px;
+    color:rgb(15, 97, 221);
+    font-family: 'Inter', sans-serif;
+    font-size: 55px;
+    display: inline-block;
+    width: fit-content;
+ animation: popUp 0.8s ease-out forwards;
+  transform-origin: center;
+}
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+#headerdetails{
+    display: inline block;
+    width: fit-content;
+ animation: popUp 0.8s ease-out forwards;
+  transform-origin: center;
+   font-family: 'Inter', sans-serif;
+   word-spacing: 9px;
+}
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+h2{
+    color: rgb(252, 252, 252);
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+#lessgoo {
+    margin-left: 29px;
+    margin-top: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     display: inline-block;
+    transition: 0.4s ease;
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;    
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    width: fit-content;
+    color: black;
+}
+#lessgoo:hover{
+    
+    transform:scale(1.1);
+}
+nav{
+    display:flex ;
+    margin-left: 0%;
+    background-color:rgba(127, 187, 237, 0.73);
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-right: 3px;
+    width: 100%;
+   
+
+}
+nav li{
+    font-size: 20px;
+    list-style: none;
+    padding:0px 23px;
+    padding-top: 9px;
+     border-radius: 20px;
+     cursor: pointer;
+
+}
+nav li:hover{
+ 
+    transform: scale(1.3);
+}
+nav form{
+    margin-left:860px;
+}
+nav input{
+    padding: 12px;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+nav button{
+ padding: 10px;
+    border-radius: 15px;
+    border: 0px solid white;
+    background-color: rgb(233, 222, 14);
+}
+#todo{
+    float:right;
+    margin-top: 10%;
+    width: 400px;
+    height : 400px;
+    margin-right: 6%;
+     border-radius: 50px;
+    border: 5px solid yellow;
+    background: transparent;
+}
+#todo{
+  animation: popOnce 0.8s ease-out forwards;
+  transform-origin: center;
+}
+
+@keyframes popOnce {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+#lessgoo h2{
+  color: black;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   cursor: pointer;
+}
+#letgoo {
+    margin-left: 29px;
+    margin-top: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     display: inline-block;
+    transition: 0.4s ease;
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    background-color: yellow;
+    width: fit-content;
+    color: black;
+    cursor: pointer;
+}
+#letgoo h2{
+  color: black;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#letgoo:hover{
+    
+    transform:scale(1.1);
+}
+#corner-gif {
+  position: fixed;
+  bottom: 210px; 
+  right: 80px;  
+  width: 260px; 
+  z-index: 1000; 
+}
+#homeic{
+  height: 35px ;
+  width: 35px;
+  border-radius: 20px;
+}
+#aboutic{
+  border-radius: 20px;
+  height: 35px ;
+  width: 35px;
+}
+#contactic{
+  border-radius: 20px;
+  height: 35px ;
+  width: 35px;
+}
+#listic{
+  border-radius: 20px;
+  height: 35px ;
+  width: 35px;
+}
+#useric{
+ 
+  border-radius: 20px;
+  height: 39px ;
+  width: 39px;
+}
+#users{
+ margin-left: 940px;
+}
+#settingic{
+  margin-right: 7px;
+  border-radius: 20px;
+  height: 35px ;
+  width: 35px;
+}
+#accounts{
+  margin-left: 3px;
+background-color: rgb(238, 63, 63);
+border-radius: 30px;
+padding: 15px;
+}
