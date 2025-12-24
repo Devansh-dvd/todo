@@ -11,7 +11,6 @@ Next on the journey: **React.js** ⚛️ and **Bootstrap** 🎨 to build more dy
 - [✨ Features](#-features)
 - [🏗️ Architecture](#-architecture)
 - [🛠️ Technologies Used](#-technologies-used)
-- [Demo](#-demo)
 
 ---
 
